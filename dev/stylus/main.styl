@@ -1,0 +1,351 @@
+/*####################################
+#
+#	Autor: Hector Sevilla
+#	Descripcion: Hoja de estilos para 
+#				 la plantilla web de 
+				 laboratorios rarpe
+#	Fecha: 29/09/2014
+#	Hora: 15:21
+#
+#	1- Barra Superior
+#	2- Cabecera
+#####################################*/
+
+@import 'fonts.styl'
+@import 'normalize.styl'
+@import 'bxslider.styl'
+@import 'flexisel.styl'
+@import 'nib'
+
+
+//Colores
+azul_principal= #3261ab
+gris = #eef2f7
+texto = #424242
+gris_puro = #1a1a1a
+enlaces = #4e4d4d
+inputs= #333232
+
+//OOCSS
+/*.ancho
+	margin 0 auto
+	width 1140px*/
+.relativo
+	position relative
+.absoluto
+	position absolute
+.fix
+	overflow hidden
+.left
+	float left
+.right
+	float right
+
+[class^="icon-"], [class*=" icon-"]
+	font-family 'icomoon'
+	speak none
+	font-style normal
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+.icon-telefono
+	&:before
+		content "\e602"
+.icon-slogan
+	&:before
+		content "\e600"
+.icon-slogan
+	&:before
+		content "\e600"
+.icon-rarpeLogo
+	&:before
+		content "\e603"
+.icon-mail
+	&:before
+		content "\e604"
+.icon-facebook
+	&:before
+		content "\e601"
+
+alinear()
+	display inline-block
+	vertical-align top
+a
+	text-decoration none
+ul
+p
+figure
+	margin 0
+	padding 0
+ul
+	list-style none
+
+body
+	font-family 'RarpeRoman'
+	font-size 16px
+	color texto
+h2
+	border-bottom 1px solid azul_principal
+	font-family 'RarpeRoman'
+	font-size 1.2rem
+	padding 15px 0
+	text-transform uppercase
+
+/*###############################################################################
+	1- BARRA SUPERIOR
+################################################################################*/
+
+.barra_superior
+	background-color: azul_principal
+	color white
+	//height 30px
+	width auto
+	.ancho
+		text-align center
+		> div
+			//alinear()
+			width auto
+	.slogan
+		font-size 1.8rem
+	.telefono
+		a
+			&:link
+			&:visited
+				color white
+				font-size 1.8rem
+				vertical-align middle
+		span
+			font-family 'RarpeBold'
+			vertical-align middle
+	.redes-sociales
+		ul
+			li
+				alinear()
+				padding-top 4px
+				a
+					&:link
+					&:visited
+						color white
+						font-size 1.3rem
+					&:hover
+						opacity .5
+
+/*###############################################################################
+	2- CABECERA
+################################################################################*/
+
+header
+	padding-top 1.8rem
+	border-bottom 2px solid azul_principal
+	.logotipo
+		a
+			&:link
+			&:visited
+				color gris_puro
+				font-size 5.5rem
+	nav
+		ul
+			li
+				//alinear()
+				padding 5px 10px
+				a
+					&:link
+					&:visited
+						color enlaces
+						text-transform uppercase
+
+/*###############################################################################
+	3- SLIDER
+################################################################################*/
+.slider
+	img
+		height auto
+		width 100%
+
+/*###############################################################################
+	4- MENU CATEGORIAS
+################################################################################*/
+
+.categorias
+	background-color: gris
+	.item
+		text-align center
+		padding 1rem 0
+		figure
+			border-radius 3px
+			border 3px solid #bcbcbc
+			height 90px
+			margin 0 auto
+			width 127px
+		.titulo
+			padding 15px 0
+			a
+				&:link
+				&:visited
+					text-transform uppercase
+					color azul_principal
+					padding 10px 0
+		.descripcion
+			margin 0 auto
+			text-align justify
+			width 50%
+
+/*###############################################################################
+	5- SECCION PRINCIPAL
+################################################################################*/
+
+section
+	padding 20px
+	.empresa
+		figure
+			img
+				height auto
+				width 100%
+	.more
+		padding 15px
+		border 1px solid azul_principal
+		display inline-block
+		border-radius 5px
+		margin 10px 0
+		a
+			&:link
+			&:visited
+				color azul_principal
+			&:hover
+				text-decoration underline
+	.actualidades
+		figure
+			img
+				height auto
+				width 100%
+	.destacados
+		.caja
+			margin 4rem 0
+			figure
+				text-align center
+			.detalles
+				.titulo
+					background-color: gris
+					padding 12px 8px
+				.showmore
+					background-color: azul_principal
+					border-radius 0 0 5px 5px
+					padding 12px 8px
+					a
+						&:link
+						&:visited
+							color white
+/*###############################################################################
+	6- PIE DE PAGINA
+################################################################################*/
+
+footer
+	background-color: gris_puro
+	border-top 6px solid #ededed
+	color #bcbcbc
+	padding 15px
+	article
+		padding 12px 0
+		p
+			&.titulo
+				text-transform uppercase
+				text-align center
+				margin 15px 0
+		.menu
+			text-align center
+			li
+				padding 8px 0 
+				a
+					&:link
+					&:visited
+						color #bcbcbc
+						text-transform uppercase
+					&:hover
+						color azul_principal
+		.info
+			padding-left 1rem
+			padding-top 1rem
+			.titulo
+				text-transform uppercase
+		.direccion
+			padding-left 1rem
+		.formulario
+			text-align center
+			input[type="text"]
+			textarea
+				background-color: inputs
+				border 0
+				border-radius 5px
+				color #bcbcbc
+				display inline-block
+				margin 8px 0
+				padding 10px 5px
+				width 95%
+			input[type="submit"]
+				background-color: #4e4d4d
+				border 2px solid transparent
+				border-radius 5px
+				color white
+				padding 5px 10px
+				text-transform capitalize
+				&:hover
+					border 2px solid azul_principal
+	.seguridad
+		text-align center
+		.titulo
+			margin-bottom 5px
+	.copy
+		border-top 2px solid #bcbcbc
+		padding 12px 0
+
+/*###############################################################################
+	x- RESPONSIVE MEDIA QUERYES
+################################################################################*/
+
+@media screen and (min-width:240px)
+	.barra_superior
+		&.small
+			.telefono
+			.redes-sociales
+				display none
+	header
+		&.small
+			padding 1.5rem
+			text-align center
+			.logotipo
+				a
+					&:link
+					&:visited
+						font-size 4rem
+			nav
+				display none
+			select
+				border-radius 5px
+				margin 0 auto
+				color enlaces
+				margin 5px 0
+				padding 12px
+				text-transform uppercase
+				width 95%
+
+@media screen and (min-width:468px)
+	.barra_superior
+		&.phones
+			overflow hidden
+			.redes-sociales
+				display block
+				float right
+				padding-right 10px
+			.slogan
+				float left
+	header
+		&.phones
+			.logotipo
+				a
+					&:link
+					&:visited
+						font-size: 6rem
