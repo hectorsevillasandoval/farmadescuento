@@ -3,7 +3,7 @@
 #	Autor: Hector Sevilla
 #	Descripcion: Hoja de estilos para 
 #				 la plantilla web de 
-				 laboratorios rarpe
+				 farmadescuento
 #	Fecha: 29/09/2014
 #	Hora: 15:21
 #
@@ -14,17 +14,13 @@
 @import 'fonts.styl'
 @import 'normalize.styl'
 @import 'bxslider.styl'
-@import 'flexisel.styl'
 @import 'nib'
 
 
 //Colores
-azul_principal= #3261ab
-gris = #eef2f7
-texto = #424242
-gris_puro = #1a1a1a
-enlaces = #4e4d4d
-inputs= #333232
+azul_tenue = #00359c
+azul_fuerte = #0d2d69
+amarillo = #ffe829
 
 //OOCSS
 /*.ancho
@@ -52,24 +48,35 @@ inputs= #333232
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 
+.icon-mail-transp
+	&:before
+		content "\f003"
+
+.icon-user
+	&:before
+		content "\f007"
+
+.icon-check
+	&:before
+		content "\f00c"
+
+.icon-clock
+	&:before
+		content "\f017"
+
+.icon-map
+	&:before
+		content "\f041"
+
+.icon-mail-color
+	&:before
+		content "\f0e0"
+
 .icon-telefono
 	&:before
 		content "\e602"
-.icon-slogan
-	&:before
-		content "\e600"
-.icon-slogan
-	&:before
-		content "\e600"
-.icon-rarpeLogo
-	&:before
-		content "\e603"
-.icon-mail
-	&:before
-		content "\e604"
-.icon-facebook
-	&:before
-		content "\e601"
+
+
 
 alinear()
 	display inline-block
@@ -79,273 +86,214 @@ a
 ul
 p
 figure
+h1
+h2
 	margin 0
 	padding 0
 ul
 	list-style none
-
 body
-	font-family 'RarpeRoman'
-	font-size 16px
-	color texto
-h2
-	border-bottom 1px solid azul_principal
-	font-family 'RarpeRoman'
-	font-size 1.2rem
-	padding 15px 0
-	text-transform uppercase
+	font-family: 'Open Sans', arial
+	font-size: 16px
+	font-weight: 400
 
-/*###############################################################################
-	1- BARRA SUPERIOR
-################################################################################*/
-
-.barra_superior
-	background-color: azul_principal
-	color white
-	//height 30px
-	width auto
-	.ancho
-		text-align center
-		> div
-			//alinear()
-			width auto
-	.slogan
-		font-size 1.8rem
-	.telefono
-		a
-			&:link
-			&:visited
-				color white
-				font-size 1.8rem
-				vertical-align middle
-		span
-			font-family 'RarpeBold'
-			vertical-align middle
-	.redes-sociales
-		ul
-			li
-				alinear()
-				padding-top 4px
-				a
-					&:link
-					&:visited
-						color white
-						font-size 1.3rem
-					&:hover
-						opacity .5
-
-/*###############################################################################
-	2- CABECERA
-################################################################################*/
-
+/*#######################################################################
+#	1- Cabecera
+#########################################################################*/
 header
-	padding-top 1.8rem
-	border-bottom 2px solid azul_principal
-	.logotipo
-		a
-			&:link
-			&:visited
-				color gris_puro
-				font-size 5.5rem
-	nav
+	background-color: azul_tenue
+	padding 5px 1rem
+	figure
+		text-align: center
+		img
+			height auto
+			max-width 100%
+	.info
+		text-align: right
+		color white
+		font-size: 1.1rem
 		ul
+			margin 10px 0
 			li
-				//alinear()
-				padding 5px 10px
-				a
-					&:link
-					&:visited
-						color enlaces
-						text-transform uppercase
-
-/*###############################################################################
-	3- SLIDER
-################################################################################*/
-.slider
-	img
-		height auto
-		width 100%
-
-/*###############################################################################
-	4- MENU CATEGORIAS
-################################################################################*/
-
-.categorias
-	background-color: gris
-	.item
-		text-align center
-		padding 1rem 0
-		figure
-			border-radius 3px
-			border 3px solid #bcbcbc
-			height 90px
-			margin 0 auto
-			width 127px
-		.titulo
-			padding 15px 0
-			a
-				&:link
-				&:visited
-					text-transform uppercase
-					color azul_principal
-					padding 10px 0
-		.descripcion
-			margin 0 auto
-			text-align justify
-			width 50%
-
-/*###############################################################################
-	5- SECCION PRINCIPAL
-################################################################################*/
-
-section
-	padding 20px
-	.empresa
-		figure
-			img
-				height auto
-				width 100%
-	.more
-		padding 15px
-		border 1px solid azul_principal
-		display inline-block
-		border-radius 5px
-		margin 10px 0
-		a
-			&:link
-			&:visited
-				color azul_principal
-			&:hover
-				text-decoration underline
-	.actualidades
-		figure
-			img
-				height auto
-				width 100%
-	.destacados
-		.caja
-			margin 4rem 0
-			figure
-				text-align center
-			.detalles
-				.titulo
-					background-color: gris
-					padding 12px 8px
-				.showmore
-					background-color: azul_principal
-					border-radius 0 0 5px 5px
-					padding 12px 8px
-					a
-						&:link
-						&:visited
-							color white
-/*###############################################################################
-	6- PIE DE PAGINA
-################################################################################*/
-
-footer
-	background-color: gris_puro
-	border-top 6px solid #ededed
-	color #bcbcbc
-	padding 15px
-	article
-		padding 12px 0
-		p
-			&.titulo
-				text-transform uppercase
-				text-align center
-				margin 15px 0
-		.menu
-			text-align center
-			li
-				padding 8px 0 
-				a
-					&:link
-					&:visited
-						color #bcbcbc
-						text-transform uppercase
-					&:hover
-						color azul_principal
-		.info
-			padding-left 1rem
-			padding-top 1rem
-			.titulo
-				text-transform uppercase
-		.direccion
-			padding-left 1rem
-		.formulario
-			text-align center
-			input[type="text"]
-			textarea
-				background-color: inputs
-				border 0
-				border-radius 5px
-				color #bcbcbc
 				display inline-block
-				margin 8px 0
-				padding 10px 5px
-				width 95%
-			input[type="submit"]
-				background-color: #4e4d4d
-				border 2px solid transparent
-				border-radius 5px
-				color white
-				padding 5px 10px
-				text-transform capitalize
-				&:hover
-					border 2px solid azul_principal
-	.seguridad
-		text-align center
-		.titulo
-			margin-bottom 5px
-	.copy
-		border-top 2px solid #bcbcbc
-		padding 12px 0
-
-/*###############################################################################
-	x- RESPONSIVE MEDIA QUERYES
-################################################################################*/
-
-@media screen and (min-width:240px)
-	.barra_superior
-		&.small
+				vertical-align top
+				&:first-child
+					margin-right 7px
+				a
+					display block
+					height 25px
+					width 25px
+					background-image url(../img/sprite-social.png)
+					&:hover
+						opacity .8
+				&:first-child
+					a
+						background-position 0 0
+				&:last-child
+					a
+						background-position 25px 0
+/*#######################################################################
+#	2- Slider
+#########################################################################*/
+.slider
+	font-size: 0
+	img
+		max-width 100%
+		height auto
+/*#######################################################################
+#	3- Newsletter
+#########################################################################*/
+.newsletter
+	background-color: azul_tenue
+	.ancho
+		padding .5rem 1rem
+		h2
+			color white
+			font-size: 18px
+			font-weight: 300
+			text-align: center
+		.formulario
+			.nombre
+			.user
+			.mail
+			.boton
+				position relative
+				color #acacac
+				text-align: center
+				margin 15px auto
+				width 244px
+				span
+					position absolute
+					top 10px
+					left 8px
+					font-size: 1.2rem
+				input[type="text"]
+				input[type="email"]
+					border 0
+					box-shadow inset 0 0 5px 0 rgba(10,11,2,.5)
+					padding 8px 30px
+			.boton
+				margin-left auto
+				margin-right auto
+				width 150px
+				input[type="submit"]
+					background-color: amarillo
+					border 0
+					border-bottom 4px solid #897c10
+					border-radius 5px
+					color #897c10
+					font-weight: 700
+					padding 12px 15px 12px 35px
+					text-transform uppercase
+				span
+					color #897c10
+					left 12px
+					top 13px
+/*#######################################################################
+#	4- Sucursales
+#########################################################################*/
+.sucursales
+	background-color: azul_fuerte
+	box-sizing border-box
+	color white
+	padding 10px 1rem 25px 1rem
+	.ancho
+		h2
+			padding 15px 0
+			text-align: center
+			text-transform: uppercase
+		.sucursal
+			text-align: center
+			.lugar
+				font-size: 18px
+				font-weight: 700
+				padding 10px 0
+				text-transform: capitalize
 			.telefono
-			.redes-sociales
-				display none
+			.horario
+			.direccion
+				font-size: 14px
+				font-weight: 300
+/*#######################################################################
+#	5- Mapa
+#########################################################################*/
+.mapa
+	min-height 300px
+	width auto
+	iframe
+		min-height 300px
+		width 100%
+/*#######################################################################
+#	6- Footer
+#########################################################################*/
+footer
+	background-color: azul_fuerte
+	color white
+	padding 3rem 1rem
+	text-align center
+	width auto
+	.copy
+		font-size: 14px
+		font-weight: 300
+	figure
+		img
+			height auto
+			max-width 100%
+/*#######################################################################
+#	7- Responsive
+#########################################################################*/
+@media screen and (min-width:468px)
 	header
 		&.small
-			padding 1.5rem
-			text-align center
-			.logotipo
-				a
-					&:link
-					&:visited
-						font-size 4rem
-			nav
-				display none
-			select
-				border-radius 5px
-				margin 0 auto
-				color enlaces
-				margin 5px 0
-				padding 12px
-				text-transform uppercase
-				width 95%
-
-@media screen and (min-width:468px)
-	.barra_superior
-		&.phones
-			overflow hidden
-			.redes-sociales
-				display block
-				float right
-				padding-right 10px
-			.slogan
-				float left
+			figure
+				text-align: left
+@media screen and (min-width:768px)
 	header
-		&.phones
-			.logotipo
-				a
-					&:link
-					&:visited
-						font-size: 6rem
+		&.medium
+			figure
+			.info
+				display inline-block
+				vertical-align top
+				width 49%
+	.newsletter
+		&.medium
+			.formulario
+				text-align: center
+				h2
+					text-align: left
+				.nombre
+				.user
+				.mail
+				.boton
+					display inline-block
+				.nombre
+				.user
+				.mail
+					margin-right 3.9rem
+					width 179px
+					input
+						padding-right 5px
+						width 100%
+	.sucursales
+		&.medium
+			.ancho
+				margin 0 auto
+				width 70%
+				clearfix()
+			.sucursal
+				text-align: left
+				float left
+				width 250px
+				&:nth-child(2n + 1)
+					float right
+				/*&:nth-child(1n + 2)
+					margin-right 0*/
+				.lugar
+					padding-left .3rem
+	footer
+		&.medium
+			clearfix()
+			.copy
+				float left
+			figure
+				float right

@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'icomoon';
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoonn") format('svg');
+}
+
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+figure,
+footer,
+header {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail-transp:before {
+  content: "\f003";
+}
+
+.icon-user:before {
+  content: "\f007";
+}
+
+.icon-check:before {
+  content: "\f00c";
+}
+
+.icon-clock:before {
+  content: "\f017";
+}
+
+.icon-map:before {
+  content: "\f041";
+}
+
+.icon-mail-color:before {
+  content: "\f0e0";
+}
+
+.icon-telefono:before {
+  content: "\e602";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+p,
+figure,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans',arial;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header {
+  background-color: #00359c;
+  padding: 5px 1rem;
+}
+
+header figure {
+  text-align: center;
+}
+
+header figure img {
+  height: auto;
+  max-width: 100%;
+}
+
+header .info {
+  text-align: right;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+header .info ul {
+  margin: 10px 0;
+}
+
+header .info ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header .info ul li:first-child {
+  margin-right: 7px;
+}
+
+header .info ul li a {
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/sprite-social.png");
+}
+
+header .info ul li a:hover {
+  opacity: .8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+header .info ul li:first-child a {
+  background-position: 0 0;
+}
+
+header .info ul li:last-child a {
+  background-position: 25px 0;
+}
+
+.slider {
+  font-size: 0;
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+}
+
+.newsletter {
+  background-color: #00359c;
+}
+
+.newsletter .ancho {
+  padding: .5rem 1rem;
+}
+
+.newsletter .ancho h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.newsletter .ancho .formulario .nombre,
+.newsletter .ancho .formulario .user,
+.newsletter .ancho .formulario .mail,
+.newsletter .ancho .formulario .boton {
+  position: relative;
+  color: #acacac;
+  text-align: center;
+  margin: 15px auto;
+  width: 244px;
+}
+
+.newsletter .ancho .formulario .nombre span,
+.newsletter .ancho .formulario .user span,
+.newsletter .ancho .formulario .mail span,
+.newsletter .ancho .formulario .boton span {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 1.2rem;
+}
+
+.newsletter .ancho .formulario .nombre input[type="text"],
+.newsletter .ancho .formulario .user input[type="email"],
+.newsletter .ancho .formulario .mail input[type="email"] {
+  border: 0;
+  -webkit-box-shadow: inset 0 0 5px 0 rgba(10,11,2,0.5);
+  box-shadow: inset 0 0 5px 0 rgba(10,11,2,0.5);
+  padding: 8px 30px;
+}
+
+.newsletter .ancho .formulario .boton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.newsletter .ancho .formulario .boton input[type="submit"] {
+  background-color: #ffe829;
+  border: 0;
+  border-bottom: 4px solid #897c10;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #897c10;
+  font-weight: 700;
+  padding: 12px 15px 12px 35px;
+  text-transform: uppercase;
+}
+
+.newsletter .ancho .formulario .boton span {
+  color: #897c10;
+  left: 12px;
+  top: 13px;
+}
+
+.sucursales {
+  background-color: #0d2d69;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 10px 1rem 25px 1rem;
+}
+
+.sucursales .ancho h2 {
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sucursales .ancho .sucursal {
+  text-align: center;
+}
+
+.sucursales .ancho .sucursal .lugar {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.sucursales .ancho .sucursal .telefono,
+.sucursales .ancho .sucursal .horario,
+.sucursales .ancho .sucursal .direccion {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.mapa {
+  min-height: 300px;
+  width: auto;
+}
+
+footer {
+  background-color: #0d2d69;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: auto;
+}
+
+footer .copy {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer figure img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (min-width:468px) {
+  header.small figure {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width:768px) {
+  header.medium figure,
+  header.medium .info {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+
+  .newsletter.medium .formulario {
+    text-align: center;
+  }
+
+  .newsletter.medium .formulario h2 {
+    text-align: left;
+  }
+
+  .newsletter.medium .formulario .nombre,
+  .newsletter.medium .formulario .user,
+  .newsletter.medium .formulario .mail,
+  .newsletter.medium .formulario .boton {
+    display: inline-block;
+  }
+
+  .newsletter.medium .formulario .nombre,
+  .newsletter.medium .formulario .user,
+  .newsletter.medium .formulario .mail {
+    margin-right: 3.9rem;
+    width: 179px;
+  }
+
+  .newsletter.medium .formulario .nombre input,
+  .newsletter.medium .formulario .user input,
+  .newsletter.medium .formulario .mail input {
+    padding-right: 5px;
+    width: 100%;
+  }
+
+  .sucursales.medium .ancho {
+    margin: 0 auto;
+    width: 70%;
+    zoom: 1;
+  }
+
+  .sucursales.medium .ancho:before,
+  .sucursales.medium .ancho:after {
+    content: "";
+    display: table;
+  }
+
+  .sucursales.medium .ancho:after {
+    clear: both;
+  }
+
+  .sucursales.medium .sucursal {
+    text-align: left;
+    float: left;
+    width: 250px;
+  }
+
+  .sucursales.medium .sucursal:nth-child(2n + 1) {
+    float: right;
+  }
+
+  .sucursales.medium .sucursal .lugar {
+    padding-left: .3rem;
+  }
+
+  footer.medium {
+    zoom: 1;
+  }
+
+  footer.medium:before,
+  footer.medium:after {
+    content: "";
+    display: table;
+  }
+
+  footer.medium:after {
+    clear: both;
+  }
+
+  footer.medium .copy {
+    float: left;
+  }
+
+  footer.medium figure {
+    float: right;
+  }
+}
