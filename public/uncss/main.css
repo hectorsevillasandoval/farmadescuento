@@ -407,3 +407,71 @@ footer figure img {
     float: right;
   }
 }
+
+@media screen and (min-width:1000px) {
+  header.large .ancho {
+    margin: 0 auto;
+    width: 58.75rem;
+  }
+
+  header.large .ancho .info {
+    font-size: 1rem;
+  }
+
+  .newsletter.large .ancho {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 5rem;
+    width: 58.75rem;
+  }
+
+  .newsletter.large .ancho .formulario {
+    text-align: left;
+  }
+
+  .newsletter.large .ancho .formulario .nombre span,
+  .newsletter.large .ancho .formulario .user span,
+  .newsletter.large .ancho .formulario .mail span {
+    left: 4px;
+    top: 6px;
+  }
+
+  .newsletter.large .ancho .formulario .boton {
+    width: auto;
+  }
+
+  .newsletter.large .ancho .formulario .boton input[type="submit"] {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 22px 15px 20px 45px;
+    position: absolute;
+    top: -40px;
+  }
+
+  .newsletter.large .ancho .formulario .boton span {
+    top: -18px;
+  }
+
+  .sucursales.large .ancho {
+    text-align: center;
+  }
+
+  .sucursales.large .ancho .sucursal {
+    display: inline-block;
+    float: none;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    vertical-align: top;
+  }
+
+  .sucursales.large .ancho .sucursal:nth-child(3n + 4) {
+    margin-right: 0;
+  }
+
+  footer.large .ancho {
+    margin: 0 auto;
+    width: 58.75rem;
+  }
+}

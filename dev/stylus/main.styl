@@ -297,3 +297,53 @@ footer
 				float left
 			figure
 				float right
+@media screen and (min-width:1000px)
+	header
+		&.large
+			.ancho
+				margin 0 auto
+				width 58.75rem
+				.info
+					font-size: 1rem
+	.newsletter
+		&.large
+			.ancho
+				box-sizing border-box
+				margin 0 auto
+				padding-left 5rem
+				width 58.75rem
+				.formulario
+					text-align: left
+					.nombre
+					.user
+					.mail
+						span
+							left 4px
+							top 6px
+					.boton
+						width auto
+						input[type="submit"]
+							font-size: 18px
+							letter-spacing: 1.5px
+							padding 22px 15px 20px 45px
+							position absolute
+							top -40px
+						span
+							top -18px
+	.sucursales
+		&.large
+			.ancho
+				text-align: center
+				.sucursal
+					display inline-block
+					float none
+					margin-bottom: 1.5rem
+					margin-right 2rem
+					vertical-align top
+					&:nth-child(3n + 4)
+						margin-right: 0
+	footer
+		&.large
+			.ancho
+				margin 0 auto
+				width 58.75rem
